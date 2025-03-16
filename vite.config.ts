@@ -8,4 +8,13 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  },
+  server: {
+    headers: {
+      "Cache-Control": "no-store"
+    }
+  }
 })
