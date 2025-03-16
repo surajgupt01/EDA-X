@@ -24,7 +24,7 @@ function handleInput(){
 <div className="w-full h-screen bg-gray-100">
 
 <div className="font-bold text-4xl p-5 text-gray-700 cursor-pointer flex">
-  <img src="/Logo.svg" className="w-10 h-10"></img>
+  <img src="/logo.svg" className="w-10 h-10"></img>
   EDA-X
   </div>
 
