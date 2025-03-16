@@ -23,19 +23,19 @@ function handleInput(){
 
 <div className="w-full h-screen bg-gray-100">
 
-<div className="font-bold text-4xl p-5 text-gray-700 cursor-pointer flex">
-  <img src="https://www.reshot.com/preview-assets/icons/SU64G82BJK/data-cleaning-SU64G82BJK.svg" className="w-10 h-10"></img>
+<div className="font-bold text-4xl p-3 text-gray-700 cursor-pointer flex">
+  <img src="https://www.reshot.com/preview-assets/icons/SU64G82BJK/data-cleaning-SU64G82BJK.svg" className="w-10 h-8"></img>
   EDA-X
   </div>
 
 <div className="flex flex-col items-center  h-195 p-2">
 
 <span className="font-semibold mb-4">Welcome to EDA-X</span>
-<div className="w-300 border-1 border-gray-300  shadow-lg h-400 flex flex-col items-center p-5  rounded-lg ">
+<div className="w-[70vw] border-1 border-gray-200  shadow-lg h-[70vh] flex flex-col items-center p-5  rounded-lg ">
   <Logo></Logo>
  </div>
 
-<div className=" w-full flex justify-center  p-5">
+<div className=" w-full flex justify-center  p-4">
 
 
   
