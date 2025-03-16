@@ -24,7 +24,7 @@ function handleInput(){
 <div className="w-full h-screen bg-gray-100">
 
 <div className="font-bold text-4xl p-5 text-gray-700 cursor-pointer flex">
-  <img src="/logo.svg" className="w-10 h-10"></img>
+  <img src="https://www.reshot.com/preview-assets/icons/SU64G82BJK/data-cleaning-SU64G82BJK.svg" className="w-10 h-10"></img>
   EDA-X
   </div>
 
