@@ -31,7 +31,7 @@ function handleInput(){
 <div className="flex flex-col items-center  h-195 p-2">
 
 <span className="font-semibold mb-4">Welcome to EDA-X</span>
-<div className="w-[70vw] border-1 border-gray-200  shadow-lg h-[70vh] flex flex-col items-center p-5  rounded-lg ">
+<div className="sm:w-[87vw] w-[97vw]  md:w-[70vw] border-1 border-gray-200  shadow-lg h-[70vh] flex flex-col items-center p-5  rounded-lg ">
   <Logo></Logo>
  </div>
 
@@ -40,7 +40,7 @@ function handleInput(){
 
   
  
-  <div className="w-3/5 bg-gray-700 shadow-md rounded-lg p-4 flex justify-end">
+  <div className=" sm:w-[90vw] w-[98vw] md:w-3/5 bg-gray-700 shadow-md rounded-lg p-4 flex justify-end">
      <div>
 
      <label htmlFor='file_input' className="cursor-pointer mr-4 group" ><UploadIcon/>
