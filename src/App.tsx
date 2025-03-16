@@ -21,7 +21,7 @@ function handleInput(){
 
 
 
-<div className="w-full h-screen bg-gray-100">
+<div className="w-full h-screen bg-gray-100 overflow-hidden">
 
 <div className="font-bold text-4xl p-3 text-gray-700 cursor-pointer flex">
   <img src="https://www.reshot.com/preview-assets/icons/SU64G82BJK/data-cleaning-SU64G82BJK.svg" className="w-10 h-8"></img>
