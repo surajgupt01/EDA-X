@@ -34,7 +34,7 @@ function handleInput(){
 <span className="font-semibold mb-4">Welcome to EDA-X</span>
 
 
-<div className="sm:w-[87vw] w-[97vw]  md:w-[70vw] border-1 border-gray-200 min-h-[75%] overflow-hidden  shadow-lg flex flex-col items-center p-5 mb-5 rounded-lg ">
+<div className="sm:w-[87vw] w-[97vw]  md:w-[70vw] border-1 border-gray-200 min-h-[80%] overflow-hidden  shadow-lg flex flex-col items-center p-5 mb-5 rounded-lg ">
   <Logo></Logo>
  </div>
 
