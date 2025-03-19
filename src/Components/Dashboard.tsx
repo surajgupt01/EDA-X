@@ -24,10 +24,10 @@ function handleInput(){
   const [file , setFile] = useState<File | null>(null)
   
   const handleFileUpload = (event: any) => {
-    let selectedFile: File | null = null; 
+ 
     setFile(event.target.files[0])
     
-    selectedFile = event.target.files[0]; 
+ 
   };
   
   async function Sendprompt(formData : FormData) {
