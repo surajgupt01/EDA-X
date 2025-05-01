@@ -5,6 +5,7 @@ import parse from 'html-react-parser'
 import React from "react";
 import Send from "./send";
 import { useMutation } from "@tanstack/react-query";
+import Nav from "./Nav";
 
 
 
@@ -90,20 +91,23 @@ function handleInput(){
   
     return(
     <>       
-<div className="w-full absolute h-screen bg-black ">
+    
+<div className="w-full absolute h-full bg-black  ">
+
+{/*   
 
 <div className=" border-slate-400 border-b-1 font-bold text-4xl p-3 bg-gray-black text-gray-400 cursor-pointer flex hover:text-gray-500">
   <img src="https://www.reshot.com/preview-assets/icons/SU64G82BJK/data-cleaning-SU64G82BJK.svg" className="w-10 h-10"></img>
   EDA-<span className="text-blue-500 hover:text-blue-600">X</span>
   </div>
-
+ */}
 
   <div className="flex flex-col items-center absolute w-full h-[90%] text-white bg-black  p-5">
 
 <span className="font-semibold mb-4">Welcome to EDA-X</span>
 
 
-<div className="w-auto min-w-[55vw]  border-1 border-gray-700 min-h-[80%] overflow-auto scroll-smooth flex flex-col items-center p-5 mb-5 rounded-lg ">
+<div className="w-auto min-w-[55vw]  border-1 border-gray-700 min-h-[80%] overflow-auto scroll-smooth flex flex-col items-center p-5 mb-5 rounded-lg text-white ">
   {/* <Logo></Logo> */}
   {data && <div className="mt-0">
 

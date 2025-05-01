@@ -5,7 +5,8 @@
        width: 100%;
        border-collapse: collapse;
        font-size: 14px;
-       text-align: left;
+       /* text-align: left; */
+       font-size: 9px;
        
      }
      
@@ -36,7 +37,8 @@
        
     } 
     ::-webkit-scrollbar-thumb{
-      background-color: white;
+      background-color: rgb(56, 55, 55);
+      width: 0;
     }
 
 
