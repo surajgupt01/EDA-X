@@ -1,14 +1,16 @@
+
 export const customStyles = {
     control: (base: any) => ({
       ...base,
-      backgroundColor: '#3f3f46', // Tailwind's bg-neutral-700
+      backgroundColor:  '#3f3f46' , // Tailwind's bg-neutral-700
       color: 'white',
-      borderColor: '#52525b',     // Slightly lighter border
+      borderColor: 'rgb(0,0,0)',     // Slightly lighter border
       boxShadow: 'none',
       '&:hover': {
         borderColor: '#a1a1aa',   // Tailwind's hover neutral-400
       },
     }),
+     
     menu: (base: any) => ({
       ...base,
       backgroundColor: '#3f3f46', // bg-neutral-700

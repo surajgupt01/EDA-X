@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer components{
     .styled-table {
        width: 100%;
@@ -12,16 +15,21 @@
      
      .styled-table th, .styled-table td {
        padding: 5px;
-       border: 1px solid #000000;
+       border: 1px solid #1e1e1e;
        text-align: left;
-       border-radius: 4px;
+       
+       
      }
     
      .styled-table thead {
-       background-color: #313131;
+       background-color: #121212;
        color: rgb(252, 252, 252);
-       border-radius: 5px;
+       
+       
      }
+
+
+  
      
      .styled-table tbody tr:nth-child(even) {
        background-color: #1b2733;
@@ -42,4 +50,5 @@
     }
 
 
+ 
   }

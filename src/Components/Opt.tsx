@@ -1,8 +1,8 @@
-import DashBoard from "./Dashboard";
 import Nav from "./Nav";
 import Forms from "./Forms";
 import { useState } from "react";
 import Plots from "./Plots";
+import { useRef } from "react";
 
 
 type catCols = {
@@ -40,6 +40,11 @@ export default function Opt(){
 
     const [piedata, setPieData] = useState<PieData[]>([]);
 
+    const [corr , setCorr] = useState(false)
+
+    const element = useRef<HTMLDivElement>(null)
+    const element2 = useRef<HTMLDivElement>(null)
+
    
    
     
@@ -47,13 +52,13 @@ export default function Opt(){
     return(
 
 
-        <div className="w-full h-full absolute bg-gray-900 flex text-white ">
+        <div className="w-full h-full absolute dark:bg-neutral-950 flex dark:text-white text-gray-700 bg-neutral-100 duration-300 ease-in-out  ">
 
             <div className="w-86 h-full">
-                <Nav setDatOverview={setDatOverview} dataOverview={dataOverview} StatOverview={StatOverview} setStatOverview={setStatOverview} plot={plot} setPlot={setPlot}></Nav>
+                <Nav setDatOverview={setDatOverview} dataOverview={dataOverview} StatOverview={StatOverview} setStatOverview={setStatOverview} plot={plot} setPlot={setPlot} setCorr = {setCorr} element = {element} element2 = {element2}></Nav>
             </div>
             <div className="bg-green-400 w-full h-full overflow-auto flex justify-center  ">
-                <Forms dataOverview={dataOverview} StatOverview={StatOverview} plot={plot} setColumns={setColumns} setFileP={setFileP}  colData={colData} dataset={dataset} setDataset = {setDataset}  PlotType={PlotType} piedata={piedata} setPieData={setPieData}/>
+                <Forms dataOverview={dataOverview} StatOverview={StatOverview} plot={plot} setColumns={setColumns} setFileP={setFileP}  colData={colData} dataset={dataset} setDataset = {setDataset}  PlotType={PlotType} piedata={piedata} setPieData={setPieData} corr={corr} element = {element} element2 = {element2}/>
             </div>
 
             {plot && <Plots setPlot={setPlot} columns={columns} fileP={fileP} ColumnName={ColumnName} setColumnNames={setColumnNames} PlotType={PlotType} setPlotType={setPlotType} setColData={setColData} setDataset={setDataset} />}

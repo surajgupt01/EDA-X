@@ -1,46 +1,25 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import {Route , Routes , BrowserRouter} from 'react-router'
-import Landing from './Components/Landing'
-import DashBoard from './Components/Dashboard'
-import Nav from './Components/Nav'
-import Opt from './Components/Opt'
-import Accordian from './Components/Accorian'
-import Plots from './Components/Plots'
+import Opt from './Components/Opt';
 
-
-    {/* <Opt></Opt> */}
-    {/* <Accordian/> */}
+import Home from './Components/Home';
+import { ThemeProvider } from './Context/ThemeContext';
+import SignnIn from './Components/SignIn';
+import SignnUp from './Components/SignUp';
 
 function App() {
-
-
-
-
   return (
-   <>
-
+    <ThemeProvider>
       <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Landing></Landing>}></Route>
-      <Route path='/dashboard' element={<Opt/>}></Route>
-    </Routes>
-    </BrowserRouter>
-
-    
-   
-   </>
-  )
+        <Routes>
+          <Route path="/login" element={<SignnIn />} />
+          <Route path="/signup" element={<SignnUp />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Opt />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
-export default App
-
-
-
-
-
-
-
-
-
-
- 
+export default App;

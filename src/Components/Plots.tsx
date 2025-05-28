@@ -7,7 +7,7 @@ import axios from "axios";
 import { useState } from "react";
 
 export default function Plots({setPlot , columns , fileP , setColumnNames , ColumnName , PlotType , setPlotType , setColData , setDataset} : any){
-    
+  
     type demo = {
 
         value : string,
@@ -99,9 +99,9 @@ export default function Plots({setPlot , columns , fileP , setColumnNames , Colu
                 e.preventDefault();
                getCols.mutate();
               }}> 
-        <div className='relative flex flex-col justify-center items-center w-120 min-h-70 h-auto border-1 border-gray-900 rounded-xl bg-neutral-900  shadow-sm shadow-gray-900'>
+        <div className='relative flex flex-col justify-center items-center w-120 min-h-70 h-auto border-1 dark:border-gray-900 border-gray-300 rounded-xl dark:bg-neutral-900 bg-neutral-800  shadow-sm dark:shadow-gray-900 shadow-gray-300'>
             <Cross setPlot={setPlot}/>
-           <p className='text-white font-semibold text-xl mb-4 '>Generate Plots</p>
+           <p className='dark:text-white text-blue-500 font-semibold text-xl mb-4 '>Generate Plots</p>
            {/* <select className='w-80 h-10 rounded-md bg-neutral-700 text-white  p-1 m-2 appearance-none px-5 '>
             
             {columns.map((e:any,index:number)=>(
@@ -136,7 +136,7 @@ export default function Plots({setPlot , columns , fileP , setColumnNames , Colu
           {/* </select> */}
           <Select 
              options={plotsOptions} 
-             className="w-80 mt-2" 
+             className="w-80 mt-2 dark:text-white text-yellow-300" 
              styles={customStyles} 
              id="plotType" 
              value={plotsOptions.find(opt => opt.value === PlotType)} // Controlled component
