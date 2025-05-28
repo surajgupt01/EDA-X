@@ -122,7 +122,7 @@ export default function Home() {
         </p>
 
         <img
-          src="../../public/Screenshot 2025-05-04 124916.png"
+          src="/assets/Screenshot 2025-05-04 124916.png"
           className="w-full rounded-2xl shadow-2xl shadow-gray-600 absolute left-90 top-20 dark:shadow-gray-900 "
         ></img>
       </motion.div>
@@ -144,7 +144,7 @@ export default function Home() {
             </h2>
 
             <div className="bg-gray-50   ml-30 mt-8 rounded-xl">
-              <img src="../../public/p2.png" className="scale-135 absolute left-80 top-25 shadow-2xl shadow-gray-600 dark:shadow-gray-900 rounded-2xl"></img>
+              <img src="/assets/p2.png" className="scale-135 absolute left-80 top-25 shadow-2xl shadow-gray-600 dark:shadow-gray-900 rounded-2xl"></img>
 
             </div>
 
@@ -159,7 +159,7 @@ export default function Home() {
                 <p>Seamless <span className="text-4xl bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Dashboading</span></p>
                 <div>
                  <p>Powered by</p>
-                <img src="../../public/gemini-brand-color.svg" className=""></img>
+                <img src="/assets/gemini-brand-color.svg" className=""></img>
 
 
                 </div>
