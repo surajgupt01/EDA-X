@@ -5,7 +5,6 @@ import parse from 'html-react-parser'
 import React from "react";
 import Send from "./send";
 import { useMutation } from "@tanstack/react-query";
-import Nav from "./Nav";
 
 
 

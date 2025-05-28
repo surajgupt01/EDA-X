@@ -6,7 +6,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useState } from "react";
 
-export default function Plots({setPlot , columns , fileP , setColumnNames , ColumnName , PlotType , setPlotType , setColData , setDataset} : any){
+export default function Plots({setPlot , columns , fileP , setColumnNames , ColumnName , PlotType , setPlotType  , setDataset} : any){
   
     type demo = {
 

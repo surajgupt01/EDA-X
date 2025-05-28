@@ -2,7 +2,6 @@ import {useTheme} from '../Context/ThemeContext'
 import {  useState } from "react"
 import Dark from "./dark";
 import Light from "./light";
-import {motion} from "motion/react"
 
 type AccordionProps = {
     title: string;
@@ -12,10 +11,10 @@ type AccordionProps = {
 
   
 
-export default function Accordian({title   , content , icon  } : AccordionProps){
+export default function Accordian({title    , icon  } : AccordionProps){
 
     const [open , setOpen] = useState(false)
-    const [mode , setMode] = useState<string>()
+
     const  {theme , toggleTheme} = useTheme()
     function handleAccord()
     {
